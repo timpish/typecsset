@@ -88,7 +88,7 @@ h1 {
 text-indent: -9999px;
 width: 277px;
 height: 54px;
-/*background: url(assets/img/logo.png) no-repeat 0 0;*/
+/*background: url(/assets/img/logo.png) no-repeat 0 0;*/
 border: none;
 overflow: hidden;
 }
@@ -239,7 +239,7 @@ body.neg #UI .dropdown li a:hover {
 background-color: #111;
 }
 .neg #left, .neg #center, .neg #right, .neg #justify {
-background: #222 url(assets/img/align_neg.png) no-repeat;
+background: #222 url(/assets/img/align_neg.png) no-repeat;
 }
 .neg #left {
 background-position: 0 0;
@@ -285,7 +285,7 @@ body.neg #UI .fontGroup1 a.opt {
 color: #666
 }
 body.neg #fsq {
-background: url(assets/img/fontsquirrel_neg.png) no-repeat right center;
+background: url(/assets/img/fontsquirrel_neg.png) no-repeat right center;
 }
 body.neg :focus,
 body.neg .selected,
@@ -327,7 +327,7 @@ top: 4px;
 position: relative;
 height: 14px;
 width: 15px;
-background: #222 url(assets/img/checkbox_neg.png) no-repeat 0 0;
+background: #222 url(/assets/img/checkbox_neg.png) no-repeat 0 0;
 cursor: pointer;
 /* IE6/7 inline-block fix */
 zoom: 1;
@@ -339,19 +339,19 @@ _height: 14px;
 background-color: #111;
 }
 .neg .unchecked {
-background: #222 url(assets/img/checkbox_neg.png) 0 -14px;
+background: #222 url(/assets/img/checkbox_neg.png) 0 -14px;
 }
 .neg .unchecked:hover {
 background-color: #111;
 }
 .neg .dropdown dt a {
-background: #222 url(assets/img/arrow_sel_neg.png) no-repeat scroll right 0;
+background: #222 url(/assets/img/arrow_sel_neg.png) no-repeat scroll right 0;
 display: block;
 width: 203px;
 padding: 5px 0 6px 0;
 }
 .neg .dropdown dt a:hover {
-background: #222 url(assets/img/arrow_sel_neg.png) no-repeat scroll right -30px;
+background: #222 url(/assets/img/arrow_sel_neg.png) no-repeat scroll right -30px;
 color: #222;
 }
 
@@ -412,13 +412,13 @@ outline: none;
 color: #222;
 }
 .dropdown dt a {
-background: #fff url(assets/img/arrow_sel_pos.png) no-repeat scroll right 0;
+background: #fff url(/assets/img/arrow_sel_pos.png) no-repeat scroll right 0;
 display: block;
 width: 203px;
 padding: 5px 0 6px 0;
 }
 .dropdown dt a:hover {
-background: #fff url(assets/img/arrow_sel_pos.png) no-repeat scroll right -30px;
+background: #fff url(/assets/img/arrow_sel_pos.png) no-repeat scroll right -30px;
 color: #222;
 }
 .dropdown ul {
@@ -460,10 +460,10 @@ a#tyk:hover, a#fd:hover, a#fsq:hover, a#tus:hover, a#mac:hover, a#win:hover {
 background-color: transparent;
 }
 #tyk{
-background:  url(assets/img/typekit.png) no-repeat right center;
+background:  url(/assets/img/typekit.png) no-repeat right center;
 }
 #fd {
-background: url(assets/img/fontdeck.png) no-repeat right center;
+background: url(/assets/img/fontdeck.png) no-repeat right center;
 }
 .fontGroup0 a.opt, .fontGroup1 a.opt  {
 color: #999;
@@ -472,13 +472,13 @@ color: #999;
 background-color: transparent;
 }
 #fsq {
-background: url(assets/img/fontsquirrel.png) no-repeat right center;
+background: url(/assets/img/fontsquirrel.png) no-repeat right center;
 }
 #mac{
-background:  url(assets/img/osx.png) no-repeat right center;;
+background:  url(/assets/img/osx.png) no-repeat right center;;
 }
 #win{
-background:  url(assets/img/windows.png) no-repeat right center;;
+background:  url(/assets/img/windows.png) no-repeat right center;;
 }
 
 label, input, button {
@@ -548,7 +548,7 @@ float: left;
 text-indent: -9999px;
 }
 #left, #center, #right, #justify {
-background: #fff url(assets/img/align_pos.png) no-repeat;
+background: #fff url(/assets/img/align_pos.png) no-repeat;
 }
 #left {
 background-position: 0 0;
@@ -635,7 +635,7 @@ top: 4px;
 position: relative;
 height: 14px;
 width: 15px;
-background: #fff url(assets/img/checkbox_pos.png) no-repeat 0 0;
+background: #fff url(/assets/img/checkbox_pos.png) no-repeat 0 0;
 cursor: pointer;
 /* IE6/7 inline-block fix */
 zoom: 1;
@@ -647,7 +647,7 @@ _height: 14px;
 background-color: #fff;
 }
 .unchecked {
-background: #fff url(assets/img/checkbox_pos.png) 0 -14px;
+background: #fff url(/assets/img/checkbox_pos.png) 0 -14px;
 }
 .unchecked:hover {
 background-color: #eee;
@@ -675,7 +675,7 @@ left: -8px;
 z-index: 9999;
 width: 231px;
 height: 138px;
-background: transparent url(assets/img/drop_arrow_pos.png) 62% 100% no-repeat;
+background: transparent url(/assets/img/drop_arrow_pos.png) 62% 100% no-repeat;
 }
 .error-inner {
 height: 120px;
@@ -696,7 +696,7 @@ display: block;
 text-indent: -9000px;
 width: 20px;
 height: 18px;
-background: transparent url(assets/img/close_pos.png) no-repeat;
+background: transparent url(/assets/img/close_pos.png) no-repeat;
 }
 .error p {
 padding: 8px 15px 15px 15px;
@@ -705,7 +705,7 @@ white-space: normal;
 font-size: 13px;
 }
 body.neg .error {
-background: transparent url(assets/img/drop_arrow_neg.png) 62% 100% no-repeat;
+background: transparent url(/assets/img/drop_arrow_neg.png) 62% 100% no-repeat;
 }
 body.neg div.error-inner {
 background-color: rgba(255,255,255,.95);
@@ -715,7 +715,7 @@ body.neg .error h3 {
 border-bottom: 1px dotted rgba(17,17,17,.9);
 }
 body.neg .error h3 a {
-background: transparent url(assets/img/close_neg.png) no-repeat;
+background: transparent url(/assets/img/close_neg.png) no-repeat;
 }
 
 
@@ -766,7 +766,7 @@ z-index: 99999;
 display: block
 }
 .ui-resizable-e {
-background: url('assets/img/drag_pos.png') no-repeat right top;
+background: url('/assets/img/drag_pos.png') no-repeat right top;
 cursor: pointer; /* col-resize */
 width: 61px;
 right: -258px;
@@ -775,7 +775,7 @@ height: 28px;
 z-index: 10
 }
 .neg .ui-resizable-e {
-background: url('assets/img/drag_neg.png') no-repeat right top
+background: url('/assets/img/drag_neg.png') no-repeat right top
 }
 .ui-resizable-e:hover, .ui-resizable-e:active, .ui-resizable-e:focus {
 background-position: 0 -28px
