@@ -59,7 +59,8 @@ background-color: #fff;
 color: #222;
 }
 body.pos h1 {
-background: url(/assets/img/logo_pos.png) no-repeat 0 0;
+/*background: url(/assets/img/logo_pos.png) no-repeat 0 0;*/
+background: url(http://timpish.github.io/typecsset/assets/img/logo_pos.png) no-repeat 0 0;
 }
 body.neg {
 background-color: #222;
