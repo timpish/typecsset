@@ -1,0 +1,824 @@
+/*
+Project:    TypeCSSet.com
+Variant:    Screen
+Author:     Timothy Martens | Timpish.com
+Date:       29 Mar 2014
+Version:    1.1 (Vader)
+
+--------------------------------------------- */
+
+@import url("reset.css");
+@import url("fontface.css");
+
+.preload {
+display: none !important
+}
+
+/* debug */
+.db1 {
+/*background-color: #ccc;*/
+border: 1px dotted red;
+}
+.db2 {
+/*background-color: #eee;*/
+border: 1px dotted cyan;
+}
+.db3 {
+/*background-color: #ddd;*/
+border: 1px dotted lime;
+}
+
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified/ */
+.clearfix:before,
+.clearfix:after {
+ content: ".";
+ display: block;
+ height: 0;
+ overflow: hidden;
+}
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1;} /* IE < 8 */
+
+
+/* These selection declarations have to be separate.
+   No text-shadow: twitter.com/miketaylr/status/12228805301
+   Also: hot pink.  */
+#bodyCopy ::-moz-selection { background: #fff; color: #d9411e; text-shadow: none; }
+#bodyCopy ::selection { background: #fff; color: #d9411e; text-shadow: none; }
+#bodyCopy ::-webkit-selection { background: #fff; color: #d9411e; text-shadow: none; }
+body.neg #bodyCopy ::-moz-selection{ background: #222; color: #d9411e; text-shadow: none; }
+body.neg #bodyCopy ::selection { background :#222; color: #d9411e; text-shadow: none; }
+body.neg #bodyCopy ::-webkit-selection { background: #222; color: #d9411e; text-shadow: none; }
+
+
+
+/* styles for fore/background switch */
+body.pos {
+background-color: #fff;
+color: #222;
+}
+body.pos h1 {
+background: url(/-/img/logo_pos.png) no-repeat 0 0;
+}
+body.neg {
+background-color: #222;
+color: #fff;
+}
+body.neg h1 {
+background: url(/-/img/logo_neg.png) no-repeat 0 0;
+}
+body.neg h1 + p {
+color: #fff;
+-webkit-font-smoothing: antialiased;
+text-shadow:rgba(0,0,0,0.4) 0 1px 0;
+}
+
+
+
+/* branding */
+#header {
+height: 0;
+white-space: nowrap;
+position: relative;
+top: -107px;
+left: -21px;
+}
+h1 {
+text-indent: -9999px;
+width: 277px;
+height: 54px;
+/*background: url(/-/img/logo.png) no-repeat 0 0;*/
+border: none;
+overflow: hidden;
+}
+h1 + p {
+font: bold 9px 'Lucida Sans', 'Lucida Sans Unicode', 'Lucida Grande';
+/*font-variant: small-caps;*/
+text-transform: uppercase;
+margin: -9px 0 0 86px;
+}
+h1 + p span {
+text-transform: lowercase;
+}
+h1 + p i {
+color: #d9411e;
+font-style: normal;
+}
+
+
+
+#wrapper {
+position: absolute;
+top: 140px;
+left: 86px;
+}
+
+
+/* text */
+#bodyCopy {
+float:left;
+margin-right: 264px;
+padding-bottom: 140px;
+/* lamb.comc: 'Minion Pro', Gentium, 'Gentium Basic', 'Hoefler Text', Constantia, 'Palatino Linotype', Georgia, serif;*/
+font-family: "Minion Pro", "Hoefler Text", Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", serif; /* typeface */
+width: 600px; /* measure */
+font-size: 16px; /* size */
+line-height: 22px; /* lead */
+text-align: left; /* align */
+}
+#bodyCopy em { /* Em Styles */
+font-style: italic; /* used by #emSet, applies to #bodyCopy > p > em */
+/* INTERFERENCE/Reconcile with @font-face FONTS!!! */
+}
+#bodyCopy p {
+margin-bottom: 0px; /* pspace */
+/* pexdent
+margin-left: 22px;
+text-indent: -22px;
+*/
+}
+#bodyCopy p + p {
+text-indent: 22px; /* pindent  */
+}
+abbr {
+letter-spacing: 0.1em;
+}
+
+.measure-45-65, .measure-67-75 {
+ background-color: #eee
+}
+.measure-66 {
+color: #f3c8bb;
+background-color: #f3c8bb;   /* #d9411e; rgba(217,75,30,.2) */
+}
+body.neg span.measure-45-65, body.neg span.measure-67-75 {
+background-color: #424242;
+}
+body.neg span.measure-66 {
+color: #a23e1f;
+background-color: #a23e1f;   /* rgba(217,75,30,.7) */
+}
+
+
+/* credits/footer */
+#cp {
+font: normal 10px/14px 'Lucida Sans Unicode', 'Lucida Grande', BitstreamVeraSansRoman, Verdana;
+color: #999;
+margin-top: 44px;
+text-align: left;
+}
+#cp em {
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+letter-spacing: -0.2em;
+}
+cite {
+font: italic 10.5px georgia;
+}
+#cp a {
+	color: #999;
+}
+
+.neg #cp a {
+	color: #666;
+}
+#cp a:hover {
+	color: #d9411e;
+}
+
+
+/* user interface dark */
+/* check topcoat, photoshop, webkit, divshot, macpaw for inspiration, update images */
+/* #cp (credits) is colored in js */
+
+.neg #UI,
+.neg form,
+.neg fieldset,
+body.neg ul,
+body.neg li,
+body.neg #alignSet li:hover {
+background-color: #222
+}
+body.neg label,
+body.neg kbd,
+body.neg #alignSet,
+body.neg #emSet,
+body.neg #emSet li a {
+color: #fff
+}
+body.neg fieldset {
+border-top: 3px solid #333
+}
+body.neg fieldset.close,
+body.neg fieldset.last,
+.neg div.grp {
+border-bottom: 3px solid #333
+}
+.neg .close {
+border-top-width: 0px;
+}
+body.neg input,
+body.neg button#negative,
+body.neg button {
+border: 1px solid #444;
+color: #fff
+}
+body.neg button#positive {
+border: 1px solid #222;
+}
+body.neg #emSet li a,
+body.neg #alignSet li a {
+border: 1px solid #444;
+border-right-style: none;
+}
+body.neg #emSet li a:hover,
+body.neg button:hover,
+body.neg #UI .dropdown li a:hover {
+background-color: #111;
+}
+.neg #left, .neg #center, .neg #right, .neg #justify {
+background: #222 url(/-/img/align_neg.png) no-repeat;
+}
+.neg #left {
+background-position: 0 0;
+}
+.neg #left.selected {
+background-position: 0 -28px;
+}
+.neg #center {
+background-position: -29px 0;
+}
+.neg #center.selected {
+background-position: -29px -28px;
+}
+.neg #right {
+background-position: -58px 0;
+}
+.neg #right.selected {
+background-position: -58px -28px;
+}
+.neg #justify {
+background-position: -87px 0;
+}
+.neg #justify.selected {
+background-position: -87px -28px;
+}
+body.neg #alignSet li:hover  {
+background-color: #111 ;
+}
+body.neg #emSet li.last,
+body.neg #alignSet li.last {
+border-right: 1px solid #444;
+}
+#alignSet li.last {
+height: 28px
+}
+body.neg .dropdown li a.optGroup {
+border-bottom: 1px solid #444;
+}
+body.neg #footer,
+body.neg #footer a,
+body.neg #UI .fontGroup0 a.opt,
+body.neg #UI .fontGroup1 a.opt {
+color: #666
+}
+body.neg #fsq {
+background: url(/-/img/fontsquirrel_neg.png) no-repeat right center;
+}
+body.neg :focus,
+body.neg .selected,
+body.neg .selected a,
+body.neg .increase:active,
+body.neg .decrease:active,
+body.neg #footer a:hover,
+body.neg #emSet li.selected a {
+color: #d9411e;
+}
+body.neg dl#target a:hover,
+body.neg .dropdown a {
+color: #fff;
+background-color: #222
+}
+body.neg .dropdown li a.sel,
+body.neg #UI .dropdown li a.sel:hover {
+background-color: #333;
+}
+body.neg #UI a#tyk:hover,
+body.neg #UI a#fd:hover,
+body.neg #UI a#fsq:hover,
+body.neg #UI a#tus:hover,
+body.neg #UI a#mac:hover,
+body.neg #UI a#win:hover {
+color: #d9411e;
+background-color: transparent;
+}
+.neg #footer a {
+border-bottom: 1px solid #333;
+}
+body.neg #UI .fontGroup0 a.opt:hover,
+body.neg #UI .fontGroup1 a.opt:hover  {
+background-color: transparent;
+}
+.neg .chkbox {
+display: inline-block;
+top: 4px;
+position: relative;
+height: 14px;
+width: 15px;
+background: #222 url(/-/img/checkbox_neg.png) no-repeat 0 0;
+cursor: pointer;
+/* IE6/7 inline-block fix */
+zoom: 1;
+*display: inline;
+_height: 14px;
+/* end fix */
+}
+.neg .chkbox:hover {
+background-color: #111;
+}
+.neg .unchecked {
+background: #222 url(/-/img/checkbox_neg.png) 0 -14px;
+}
+.neg .unchecked:hover {
+background-color: #111;
+}
+.neg .dropdown dt a {
+background: #222 url(/-/img/arrow_sel_neg.png) no-repeat scroll right 0;
+display: block;
+width: 203px;
+padding: 5px 0 6px 0;
+}
+.neg .dropdown dt a:hover {
+background: #222 url(/-/img/arrow_sel_neg.png) no-repeat scroll right -30px;
+color: #222;
+}
+
+/* end reverse ground styles */
+
+/* user interface light */
+
+#UI {
+background-color: #fff;
+width: 214px;
+/*margin-left: 10px;
+float: left;*/
+position: absolute;
+top: 0;
+right: 0;
+}
+#UI, label, input, kbd, button, .dropdown {
+font: normal 15px 'Lucida Sans Unicode', 'Lucida Grande', BitstreamVeraSansRoman, Verdana;
+color: #222;
+}
+input {
+vertical-align: baseline;
+}
+a {
+text-decoration: none;
+color: #222;
+}
+:focus, .selected, .selected a, .increase:active, .decrease:active {
+color: #d9411e;
+}
+fieldset {
+height: 30px;
+border-top: 3px solid #ddd;
+/*border-left: 3px solid #ddd;
+border-right: 3px solid #ddd;*/
+padding: 10px 0 10px 6px;
+white-space: nowrap;
+position: relative;
+}
+fieldset.first {
+padding-bottom: 10px;
+}
+fieldset.last {
+border-bottom: 3px solid #ddd;
+}
+#typeface {
+display: none;
+}
+.dropdown dd {
+position: relative;
+}
+.dropdown a, .dropdown a:visited {
+color: #222;
+text-decoration: none;
+outline: none;
+}
+.dropdown a:hover {
+color: #222;
+}
+.dropdown dt a {
+background: #fff url(/-/img/arrow_sel_pos.png) no-repeat scroll right 0;
+display: block;
+width: 203px;
+padding: 5px 0 6px 0;
+}
+.dropdown dt a:hover {
+background: #fff url(/-/img/arrow_sel_pos.png) no-repeat scroll right -30px;
+color: #222;
+}
+.dropdown ul {
+display: none;
+background: #fff;
+position: absolute;
+top: 13px;
+left: -6px;
+width: 214px;
+height: 474px;
+overflow-x: hidden;
+overflow-y: scroll;
+z-index: 100;
+}
+.dropdown li {
+background-color: #fff;
+}
+.dropdown span.value {
+display: none;
+}
+.dropdown li a {
+padding: 5px 0 6px 6px;
+display: block;
+}
+.dropdown li a:hover {
+background-color: #eee;
+}
+.dropdown li a.optGroup {
+color: #d9411e;
+border-bottom: 1px solid #ddd;
+}
+.dropdown li a.sel {
+background-color: #ddd;
+}
+.fontGroup0, .fontGroup1, .fontGroup2, .fontGroup4, .fontGroup5 {
+display: none;
+}
+a#tyk:hover, a#fd:hover, a#fsq:hover, a#tus:hover, a#mac:hover, a#win:hover {
+background-color: transparent;
+}
+#tyk{
+background:  url(/-/img/typekit.png) no-repeat right center;
+}
+#fd {
+background: url(/-/img/fontdeck.png) no-repeat right center;
+}
+.fontGroup0 a.opt, .fontGroup1 a.opt  {
+color: #999;
+}
+.fontGroup0 a.opt:hover, .fontGroup1 a.opt:hover  {
+background-color: transparent;
+}
+#fsq {
+background: url(/-/img/fontsquirrel.png) no-repeat right center;
+}
+#mac{
+background:  url(/-/img/osx.png) no-repeat right center;;
+}
+#win{
+background:  url(/-/img/windows.png) no-repeat right center;;
+}
+
+label, input, button {
+vertical-align: middle;
+}
+label {
+display: inline-block;
+width: 80px;
+}
+kbd {
+border-bottom: 1px solid #888
+}
+input, button {
+border: 1px solid #bbb;
+}
+input[type=text] {
+width: 51px;
+text-align: right;
+padding: 0 3px 0 0;
+height: 26px;
+margin-right: -1px;
+}
+button {
+width: 29px;
+height: 28px;
+}
+button:hover {
+background: #eee;
+}
+.decrease {
+margin-left: ; /* What value for IE? */
+-moz-margin-start: -5px;
+-webkit-margin-start: -6px;
+}
+#positive, #negative {
+text-align: center;
+}
+#positive {
+width: 56px;
+background: #fff;
+color: #222;
+border: 1px solid #bbb;
+padding-left: 1px;
+}
+#negative {
+width: 57px;
+background: #222;
+color: #fff;
+border: 1px solid #222;
+margin-left: -1px;
+}
+.grp {
+height: 30px;
+border-bottom: 3px solid #ddd;
+padding: 10px 0 10px 6px;
+}
+.grp p {
+float: left;
+width: 85px;
+padding-top: 7px;
+}
+#alignSet li, #emSet li {
+display: inline;
+float: left;
+}
+#alignSet li a {
+text-indent: -9999px;
+}
+#left, #center, #right, #justify {
+background: #fff url(/-/img/align_pos.png) no-repeat;
+}
+#left {
+background-position: 0 0;
+}
+#left.selected {
+background-position: 0 -28px;
+}
+#center {
+background-position: -29px 0;
+}
+#center.selected {
+background-position: -29px -28px;
+}
+#right {
+background-position: -58px 0;
+}
+#right.selected {
+background-position: -58px -28px;
+}
+#justify {
+background-position: -87px 0;
+}
+#justify.selected {
+background-position: -87px -28px;
+}
+#alignSet li a, #emSet li a {
+text-align: center;
+display: inline-block;
+width: 28px;
+height: 21px;
+padding-top: 5px;
+padding-right: 0px;
+border: 1px solid #bbb;
+border-right: none;
+white-space: nowrap;
+/* IE6/7 inline-block fix */
+zoom: 1;
+*display: inline;
+_height: 21px;
+/* end fix */
+}
+li.last {
+border-right: 1px solid #bbb;
+}
+#emSet p:hover, #alignSet p:hover {
+cursor: pointer;
+}
+#alignSet li:hover, #emSet li a:hover {
+background-color: #eee
+}
+#alignSet li.selected:hover, #emSet li.selected a:hover {
+background-color: #fff
+}
+#emphasis {
+font-family: Georgia, 'Times New Roman', Serif;
+}
+#small-caps span {
+font-variant: small-caps;
+}
+select:focus {
+color: #222;
+}
+/* hyphenate */
+fieldset.close {
+border-bottom: 3px solid #ddd;
+border-top: none;
+padding-top: 16px;
+padding-bottom: 3px;
+}
+#hyph {
+height: 14px;
+width: 15px;
+outline: 0
+filter: alpha(opacity=0); /* internet explorer */
+-khtml-opacity: 0.0;      /* khtml, old safari */
+-moz-opacity: 0.0;       /* mozilla, netscape */
+opacity: 0.0;           /* fx, safari, opera */
+cursor: pointer;
+margin-bottom: 7px;
+}
+.chkbox {
+display: inline-block;
+top: 4px;
+position: relative;
+height: 14px;
+width: 15px;
+background: #fff url(/-/img/checkbox_pos.png) no-repeat 0 0;
+cursor: pointer;
+/* IE6/7 inline-block fix */
+zoom: 1;
+*display: inline;
+_height: 14px;
+/* end fix */
+}
+.chkbox:hover {
+background-color: #fff;
+}
+.unchecked {
+background: #fff url(/-/img/checkbox_pos.png) 0 -14px;
+}
+.unchecked:hover {
+background-color: #eee;
+}
+
+
+
+
+
+
+/* Kev Error Check
+.error {
+border:1px solid #900;
+background:#fbcece;
+z-index:100001;
+position:absolute;
+}
+*/
+
+/* Tim's Error Styles */
+.error {
+position: absolute;
+top: -133px;
+left: -8px;
+z-index: 9999;
+width: 231px;
+height: 138px;
+background: transparent url(/-/img/drop_arrow_pos.png) 62% 100% no-repeat;
+}
+.error-inner {
+height: 120px;
+background-color: rgba(0,0,0,0.8);
+text-align: left;
+color: white;
+}
+.error h3 {
+border-bottom: 1px dotted rgba(255,255,255,0.5);
+padding: 9px 7px 9px 15px;
+font-family: georgia;
+font-style: italic;
+font-weight: bold;
+}
+.error h3 a {
+float: right;
+display: block;
+text-indent: -9000px;
+width: 20px;
+height: 18px;
+background: transparent url(/-/img/close_pos.png) no-repeat;
+}
+.error p {
+padding: 8px 15px 15px 15px;
+line-height: 1.4;
+white-space: normal;
+font-size: 13px;
+}
+body.neg .error {
+background: transparent url(/-/img/drop_arrow_neg.png) 62% 100% no-repeat;
+}
+body.neg div.error-inner {
+background-color: rgba(255,255,255,.95);
+color: #222;
+}
+body.neg .error h3 {
+border-bottom: 1px dotted rgba(17,17,17,.9);
+}
+body.neg .error h3 a {
+background: transparent url(/-/img/close_neg.png) no-repeat;
+}
+
+
+#footer {
+padding: 8px 1px 1px 1px;
+text-align: left;
+font-size: 10px;
+color: #999;
+white-space: nowrap;
+}
+#footer a {
+color: #999;
+border-bottom: 1px solid #ddd;
+}
+
+
+
+#footer a:hover {
+color: #d9411e;
+}
+#footer em {
+font-style: normal;
+letter-spacing: -0.2em;
+}
+#footer span {
+display: none;
+}
+#footer span + span {
+display: inline;
+}
+#footer a:hover span {
+display: inline;
+}
+#footer a:hover span + span {
+display: none;
+}
+
+
+
+
+.ui-resizable {
+position: relative
+}
+.ui-resizable-handle {
+position: absolute;
+font-size: 0.1px;
+z-index: 99999;
+display: block
+}
+.ui-resizable-e {
+background: url('/-/img/drag_pos.png') no-repeat right top;
+cursor: pointer; /* col-resize */
+width: 61px;
+right: -258px;
+top: 66px;
+height: 28px;
+z-index: 10
+}
+.neg .ui-resizable-e {
+background: url('/-/img/drag_neg.png') no-repeat right top
+}
+.ui-resizable-e:hover, .ui-resizable-e:active, .ui-resizable-e:focus {
+background-position: 0 -28px
+}
+
+
+
+/* http://numerosign.com/notebook/styling-webkit-scrollbars-with-css3/ */
+
+::-webkit-scrollbar {
+height: 1.5ex;
+-webkit-border-radius: 0ex;
+background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+/*border-top: 1px solid #fff; */
+background: #eee -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(221, 221, 221)), to(rgb(255, 255, 255)));
+-webkit-border-radius: 0ex;
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .0);
+}
+
+.neg #UI ::-webkit-scrollbar {
+height: 1.5ex;
+-webkit-border-radius: 0ex;
+background: transparent;
+}
+
+.neg #UI ::-webkit-scrollbar-thumb {
+/*border-top: 1px solid #fff; */
+background: #222 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(51, 51, 51)), to(rgb(34, 34, 34)));
+-webkit-border-radius: 0ex;
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .0);
+}
+
+
+
+
+
+
+
+
+
+
+
+

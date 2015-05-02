@@ -1,0 +1,264 @@
+/*	Bitstream Vera
+	Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved. Bitstream Vera is a trademark of Bitstream, Inc. */
+@font-face {
+font-family: 'BitstreamVeraSans';
+src: url('/-/fonts/Vera-webfont.eot'); 
+src: url('/-/fonts/Vera-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/Vera-webfont.woff') format('woff'),
+     url('/-/fonts/Vera-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}	
+@font-face {
+font-family: 'BitstreamVeraSans';
+src: url('/-/fonts/Vera-Italic-webfont.eot') format('eot');
+src: url('/-/fonts/Vera-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/Vera-Italic-webfont.woff') format('woff'),
+     url('/-/fonts/Vera-Italic-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: italic;
+}
+@font-face {
+font-family: 'BitstreamVeraSans';
+src: url('/-/fonts/Vera-Bold-webfont.eot')format('eot');
+src: url('/-/fonts/Vera-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/Vera-Bold-webfont.woff') format('woff'),
+     url('/-/fonts/Vera-Bold-webfont.ttf') format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+
+/*	Calluna
+	A font by Jos Buivenga (exljbris) -> www.exljbris.com
+	Bold & Italic @Typekit */
+@font-face {
+font-family: 'CallunaRegular';
+src: url('/-/fonts/calluna-regular-webfont.eot') format('eot');
+src: url('/-/fonts/calluna-regular-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/calluna-regular-webfont.woff') format('woff'),
+     url('/-/fonts/calluna-regular-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+/*	Charis SIL
+	This Font Software is Copyright (c) 1997-2008, SIL International (http://scripts.sil.org/). All Rights Reserved. */ 
+@font-face {
+font-family: 'CharisSIL';
+src: url('/-/fonts/CharisSILR-webfont.eot') format('eot');
+src: url('/-/fonts/CharisSILR-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/CharisSILR-webfont.woff') format('woff'), 
+     url('/-/fonts/CharisSILR-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'CharisSIL';
+src: url('/-/fonts/CharisSILI-webfont.eot') format('eot');
+src: url('/-/fonts/CharisSILI-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/CharisSILI-webfont.woff') format('woff'),
+     url('/-/fonts/CharisSILI-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: italic;
+}
+@font-face {
+font-family: 'CharisSIL';
+src: url('/-/fonts/CharisSILB-webfont.eot') format('eot');
+src: url('/-/fonts/CharisSILB-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/CharisSILB-webfont.woff') format('woff'),
+     url('/-/fonts/CharisSILB-webfont.ttf') format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+
+/*	DejaVu Serif
+	Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved. Bitstream Vera is a trademark of Bitstream, Inc. Copyright (c) 2006 by Tavmjong Bah. All Rights Reserved. */ 
+@font-face {
+font-family: 'DejaVuSerif';
+src: url('/-/fonts/DejaVuSerif-webfont.eot')format('eot');
+src: url('/-/fonts/DejaVuSerif-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/DejaVuSerif-webfont.woff') format('woff'),
+     url('/-/fonts/DejaVuSerif-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'DejaVuSerif';
+src: url('/-/fonts/DejaVuSerif-Italic-webfont.eot') format('eot');
+src: url('/-/fonts/DejaVuSerif-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/DejaVuSerif-Italic-webfont.woff') format('woff'), 
+     url('/-/fonts/DejaVuSerif-Italic-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: italic;
+}
+@font-face {
+font-family: 'DejaVuSerif';
+src: url('/-/fonts/DejaVuSerif-Bold-webfont.eot') format('eot');
+src: url('/-/fonts/DejaVuSerif-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/DejaVuSerif-Bold-webfont.woff') format('woff'), 
+     url('/-/fonts/DejaVuSerif-Bold-webfont.ttf') format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+
+/*	Museo Sans 500, Museo 700
+	A font by Jos Buivenga (exljbris) -> www.exljbris.com */ 
+@font-face {
+font-family: 'MuseoSans';
+src: url('/-/fonts/museosans_500-webfont.eot') format('eot');
+src: url('/-/fonts/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/museosans_500-webfont.woff') format('woff'), 
+     url('/-/fonts/museosans_500-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'MuseoSans';
+src: url('/-/fonts/museosans_500_italic-webfont.eot') format('eot');
+src: url('/-/fonts/museosans_500_italic-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/museosans_500_italic-webfont.woff') format('woff'), 
+     url('/-/fonts/museosans_500_italic-webfont.ttf') format('truetype'); 
+font-weight: normal;
+font-style: italic;
+}
+@font-face {
+font-family: 'MuseoSans';
+src: url('/-/fonts/museo700-regular-webfont.eot') format('eot');
+src: url('/-/fonts/museo700-regular-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/museo700-regular-webfont.woff') format('woff'), 
+     url('/-/fonts/museo700-regular-webfont.ttf') format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+
+/*	Museo Slab 500, Museo 700
+	A font by Jos Buivenga (exljbris) -> www.exljbris.com */ 
+@font-face {
+font-family: 'MuseoSlab';
+src: url('/-/fonts/museo_slab_500-webfont.eot') format('eot');
+src: url('/-/fonts/museo_slab_500-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/museo_slab_500-webfont.woff') format('woff'), 
+     url('/-/fonts/museo_slab_500-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'MuseoSlab';
+src: url('/-/fonts/museo_slab_500italic-webfont.eot') format('eot');
+src: url('/-/fonts/museo_slab_500italic-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/museo_slab_500italic-webfont.woff') format('woff'), 
+     url('/-/fonts/museo_slab_500italic-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: italic;
+}
+@font-face {
+font-family: 'MuseoSlab';
+src: url('/-/fonts/museo700-regular-webfont.eot') format('eot');
+src: url('/-/fonts/museo700-regular-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/museo700-regular-webfont.woff') format('woff'), 
+     url('/-/fonts/museo700-regular-webfont.ttf') format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+
+/*	Myndraine
+	As creator of this font, Christopher Miller permits its use however its owner sees fit, other than naming it something else and trying to sell it. That would be impolite in addition to being illegal. */ 
+@font-face {
+font-family: 'MyndraineRegular';
+src: url('/-/fonts/Myndraine-webfont.eot?') format('eot');
+src: url('/-/fonts/Myndraine-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/Myndraine-webfont.woff') format('woff'), 
+     url('/-/fonts/Myndraine-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+/*	PT Sans
+	Copyright © 2009 ParaType Ltd. http://www.paratype.com/public/ with Reserved Names "PT Sans" and "ParaType". */ 
+@font-face {
+font-family: 'PTSans';
+src: url('/-/fonts/PTS55F-webfont.eot') format('eot');
+src: url('/-/fonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/PTS55F-webfont.woff') format('woff'), 
+     url('/-/fonts/PTS55F-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'PTSans';
+src: url('/-/fonts/PTS56F-webfont.eot') format('eot');
+src: url('/-/fonts/PTS56F-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/PTS56F-webfont.woff') format('woff'), 
+     url('/-/fonts/PTS56F-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: italic;
+}
+@font-face {
+font-family: 'PTSans';
+src: url('/-/fonts/PTS75F-webfont.eot') format('eot');
+src: url('/-/fonts/PTS75F-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/PTS75F-webfont.woff') format('woff'), 
+     url('/-/fonts/PTS75F-webfont.ttf') format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+
+/*	Serif 6 Beta
+	A font by Christian Robertson. (Betatype) -> http://betatype.com/node/35 */ 
+@font-face {
+font-family: 'Serif6Beta';
+src: url('/-/fonts/serif6beta-regular-webfont.eot') format('eot');
+src: url('/-/fonts/serif6beta-regular-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/serif6beta-regular-webfont.woff') format('woff'), 
+     url('/-/fonts/serif6beta-regular-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Serif6Beta';
+src: url('/-/fonts/serif6beta-italic-webfont.eot') format('eot');
+src: url('/-/fonts/serif6beta-italic-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/serif6beta-italic-webfont.woff') format('woff'), 
+     url('/-/fonts/serif6beta-italic-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: italic;
+}
+@font-face {
+font-family: 'Serif6Beta';
+src: url('/-/fonts/serif6beta-bold-webfont.eot') format('eot');
+src: url('/-/fonts/serif6beta-bold-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/serif6beta-bold-webfont.woff') format('woff'), 
+     url('/-/fonts/serif6beta-bold-webfont.ttf') format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+
+/*	Serif 12 Beta
+	A font by Christian Robertson. (Betatype) -> http://betatype.com/node/35 */ 
+@font-face {
+font-family: 'Serif12Beta';
+src: url('/-/fonts/serif12beta-regular-webfont.eot') format('eot');
+src: url('/-/fonts/serif12beta-regular-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/serif12beta-regular-webfont.woff') format('woff'), 
+     url('/-/fonts/serif12beta-regular-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Serif12Beta';
+src: url('/-/fonts/serif12beta-italic-webfont.eot') format('eot');
+src: url('/-/fonts/serif12beta-italic-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/serif12beta-italic-webfont.woff') format('woff'), 
+     url('/-/fonts/serif12beta-italic-webfont.ttf') format('truetype'); 
+font-weight: normal;
+font-style: italic;
+}
+@font-face {
+font-family: 'Serif12Beta';
+src: url('/-/fonts/serif12beta-bold-webfont.eot') format('eot');
+src: url('/-/fonts/serif12beta-bold-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/-/fonts/serif12beta-bold-webfont.woff') format('woff'), 
+     url('/-/fonts/serif12beta-bold-webfont.ttf') format('truetype'); 
+font-weight: bold;
+font-style: normal;
+}
